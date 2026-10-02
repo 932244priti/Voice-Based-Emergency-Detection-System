@@ -1,0 +1,8 @@
+streamlit
+streamlit-geolocation
+SpeechRecognition
+requests
+pydeck
+scikit-learn
+pandas
+python-dotenv

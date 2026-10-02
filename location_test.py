@@ -1,8 +1,12 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import requests
+import os
+from dotenv import load_dotenv
 
-TOPIC = "priti_women_safety_1004"
+load_dotenv()
+
+TOPIC = os.getenv("NTFY_TOPIC")
 
 st.set_page_config(
     page_title="NTFY Live Location Test",

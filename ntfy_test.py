@@ -1,7 +1,10 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-TOPIC = "priti_women_safety_1004"
+load_dotenv()
 
+TOPIC = os.getenv("NTFY_TOPIC")
 latitude = 18.5196
 longitude = 73.8554
 

@@ -1,3 +1,7 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 import streamlit as st
 import speech_recognition as sr
 import pickle
@@ -20,11 +24,13 @@ st.set_page_config(
 # ============================================================
 # CONFIGURATION
 # ============================================================
+from dotenv import load_dotenv
+import os
 
-TOPIC = "priti_women_safety_1004"
+load_dotenv()
+
+TOPIC = os.getenv("NTFY_TOPIC")
 NTFY_URL = f"https://ntfy.sh/{TOPIC}"
-
-
 # ============================================================
 # LOAD MODEL
 # ============================================================
